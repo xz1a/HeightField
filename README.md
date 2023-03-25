@@ -36,3 +36,9 @@ for all i, j
 ## References
 
  - [Fast Water Simulation for Games Using Height Fields by Matthias Müller-Fischer from GDC 2008](https://ubm-twvideo01.s3.amazonaws.com/o1/vault/gdc08/slides/S6509i1.pdf)
+
+## Dependencies
+- [GLFW](https://github.com/glfw/glfw) - an Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development.
+- [GL3W](https://github.com/skaslev/gl3w) - Simple OpenGL core profile loading
+- [GLM](https://github.com/g-truc/glm) - a header only C++ mathematics library for graphics software based on the OpenGL Shading Language (GLSL) specifications.
+- [STBI](https://github.com/nothings/stb/blob/master/stb_image.h) - Image Loading Header Library.
