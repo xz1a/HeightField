@@ -1,0 +1,11 @@
+#version 450 core
+
+in vec3 texture_coordinates;
+
+uniform samplerCube skybox_texture;
+
+out vec4 Fragment_Color;
+
+void main() {
+    Fragment_Color = texture(skybox_texture, texture_coordinates);
+}

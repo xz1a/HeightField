@@ -1,0 +1,13 @@
+#version 450 core
+
+uniform mat4 model_view_matrix;
+uniform mat4 projection_matrix;
+
+layout (location = 0) in vec3 vertex_position;
+
+out vec4 position_viewspace;
+
+void main() {
+    position_viewspace = model_view_matrix * vec4(vertex_position, 1.0);
+    gl_Position = projection_matrix * position_viewspace;
+}

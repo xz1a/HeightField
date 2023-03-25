@@ -1,0 +1,12 @@
+#version 450 core
+
+uniform samplerCube skybox_texture;
+
+in vec3 normal;
+in vec4 position_vs;
+
+out vec4 Fragment_Color;
+
+void main() {
+    Fragment_Color =  (vec4(0.83, 0.94, 0.98, 1.0) * texture(skybox_texture, reflect(normalize(vec3(position_vs)), normalize(normal))));
+}
